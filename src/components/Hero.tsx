@@ -4,7 +4,7 @@ import prodeck_toolbar from "@/assets/prodeck_toolbar.png";
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="pt-20 pb-10 bg-white">>
+    <section id="hero" className="pt-20 pb-10 bg-white">
       <div className="container mx-auto px-4 max-w-2xl flex flex-col items-center gap-6 text-center">
         {/* Optional: Add a subtle badge/pill here like "Free & Open Source" */}
         <h1 className="font-heading text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
