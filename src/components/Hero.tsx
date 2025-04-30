@@ -1,4 +1,5 @@
 import React from 'react';
+import prodeck_toolbar from "@/assets/prodeck_toolbar.png";
 // import { Button } from "@/components/ui/button"; // Assuming shadcn/ui is installed via template
 
 const Hero: React.FC = () => {
@@ -29,7 +30,7 @@ const Hero: React.FC = () => {
       {/* Consider adding the toolbar image here, perhaps with some subtle animation or framing */}
       <div className="container max-w-[64rem] mt-8">
          <img 
-            src="/assets/prodeck_toolbar.png" // Assuming image will be placed in public/assets
+            src={prodeck_toolbar} // Assuming image will be placed in public/assets
             alt="ProDeck Toolbar Screenshot" 
             className="rounded-lg border bg-muted p-2 shadow-lg dark:bg-zinc-800 dark:border-zinc-700"
          />

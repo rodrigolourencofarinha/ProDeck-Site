@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from "@/assets/logo.svg"
 
 const Header: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ const Header: React.FC = () => {
         <div className="mr-4 hidden md:flex">
           <a className="mr-6 flex items-center space-x-2" href="/">
             {/* Logo */}
-            <img src="/assets/logo.svg" alt="ProDeck Logo" className="h-6 mr-2" />
+            <img src={logo} alt="ProDeck Logo" className="h-6 mr-2" />
             <span className="hidden font-bold sm:inline-block">
               ProDeck
             </span>
