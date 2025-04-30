@@ -3,8 +3,8 @@ import logo from "@/assets/logo.svg"
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-12 max-w-screen-2xl items-center px 4">
         <div className="mr-4 hidden md:flex">
           <a className="mr-6 flex items-center space-x-2" href="/">
             {/* Logo */}
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
             >
               {/* Add GitHub Icon Here */}
               <div
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 w-9"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8"
               >
                 GitHub
               </div>
