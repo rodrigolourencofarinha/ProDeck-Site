@@ -5,7 +5,7 @@ import prodeck_toolbar from "@/assets/prodeck_toolbar.png";
 const Hero: React.FC = () => {
   return (
     <section id="hero" className="pt-20 pb-10 bg-white">
-      <div className="container mx-auto px-4 max-w-2xl flex flex-col items-center gap-6 text-center">
+      <div className="container mx-auto px-4 max-w-4xl flex flex-col items-center gap-6 text-center">
         {/* Optional: Add a subtle badge/pill here like "Free & Open Source" */}
         <h1 className="font-heading text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
           ProDeck: Supercharge Your PowerPoint Workflow
@@ -27,11 +27,11 @@ const Hero: React.FC = () => {
         </div>
       </div>
       {/* Consider adding the toolbar image here, perhaps with some subtle animation or framing */}
-      <div className="container mx-auto px-4 max-w-2xl mt-8">
+      <div className="container mx-auto px-5 max-w-10xl mt-10">
          <img 
             src={prodeck_toolbar} // Assuming image will be placed in public/assets
             alt="ProDeck Toolbar Screenshot" 
-            className="rounded-lg border bg-muted p-2 shadow-lg dark:bg-zinc-800 dark:border-zinc-700"
+            className="mx-auto max-w-full h-auto rounded-lg border bg-muted p-2 shadow-lg dark:bg-zinc-800"
          />
       </div>
     </section>

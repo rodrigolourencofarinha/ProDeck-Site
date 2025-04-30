@@ -40,22 +40,31 @@ const Features: React.FC = () => {
     // Add other key features if needed, keeping the list focused
   ];
 
+
   return (
-    <section id="features" className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24">
-      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-        <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">Features</h2>
-        <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-          ProDeck provides essential tools to streamline your slide creation and editing process.
-        </p>
-      </div>
-      <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
-        {featuresList.map((feature) => (
-          <FeatureItem key={feature.title} title={feature.title} description={feature.description} />
-        ))}
+    <section id="features" className="bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24">
+      {/* Centered wrapper */}
+      <div className="container mx-auto px-4 max-w-4xl space-y-6">
+        {/* Title + intro */}
+        <div className="flex flex-col items-center space-y-4 text-center">
+          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">Features</h2>
+          <p className="max-w-prose leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+            ProDeck provides essential tools to streamline your slide creation and editing process.
+          </p>
+        </div>
+        {/* Features grid */}
+        <div className="grid justify-center gap-8 sm:grid-cols-2 md:grid-cols-3">
+          {featuresList.map((feature) => (
+            <FeatureItem
+              key={feature.title}
+              title={feature.title}
+              description={feature.description}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
 export default Features;
-
