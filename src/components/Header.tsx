@@ -4,11 +4,11 @@ import logo from "@/assets/logo.svg"
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-12 max-w-screen-2xl items-center px 4">
+      <div className="container mx-auto flex h-12 max-w-screen-2xl items-center px-4">
         <div className="mr-4 hidden md:flex">
           <a className="mr-6 flex items-center space-x-2" href="/">
             {/* Logo */}
-            <img src={logo} alt="ProDeck Logo" className="h-6 mr-2" />
+            <img src={logo} alt="ProDeck Logo" className="h-10 w-auto mr-2" />
             <span className="hidden font-bold sm:inline-block">
               ProDeck
             </span>
