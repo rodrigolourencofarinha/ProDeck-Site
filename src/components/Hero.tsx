@@ -33,8 +33,8 @@ const Hero: React.FC = () => {
          <img 
             src={prodeck_toolbar} // Assuming image will be placed in public/assets
             alt="ProDeck Toolbar Screenshot" 
-            className="mx-auto max-w-full h-auto rounded-lg border bg-muted p-2 shadow-lg dark:bg-zinc-800"
-         />
+            className="w-full h-auto rounded-lg border bg-muted p-2 shadow-lg dark:bg-zinc-800"
+            />
       </div>
     </section>
   );
