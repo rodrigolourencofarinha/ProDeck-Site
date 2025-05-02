@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         {/* Logo + menu always visible, not just on md+ */}
         <div className="mr-4 flex items-center">
           <a className="mr-6 flex items-center space-x-2" href="/">
-            <img src={logo} alt="ProDeck Logo" className="h-10 sm:h-12 md:h-8 w-auto mr-2"/>
+            <img src={logo} alt="ProDeck Logo" className="h-16 sm:h-12 md:h-8 w-auto mr-2"/>
             <span className="hidden font-bold sm:inline-block">ProDeck</span>
           </a>
           <nav className="flex items-center gap-4 text-sm">
