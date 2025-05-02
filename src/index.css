@@ -26,8 +26,3 @@
   }
 }
 
-/* 🔒 GLOBAL FIX FOR MOBILE OVERFLOW */
-html,
-body {
-  overflow-x: hidden;
-}

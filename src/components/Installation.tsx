@@ -1,4 +1,6 @@
 import React from "react";
+import { Apple, Monitor } from "lucide-react";
+
 
 // Reusable step component
 const InstallationStep: React.FC<{
@@ -6,19 +8,23 @@ const InstallationStep: React.FC<{
   title: string;
   children: React.ReactNode;
 }> = ({ step, title, children }) => (
-  <div className="flex">
-    <div className="flex flex-col items-center mr-4">
+  <div className="flex flex-col sm:flex-row sm:items-start">
+    {/* Step Number & Line */}
+    <div className="flex flex-row sm:flex-col items-center sm:items-center mr-4 shrink-0">
       <div className="flex items-center justify-center w-10 h-10 border rounded-full">
         <span className="text-xl font-semibold">{step}</span>
       </div>
-      <div className="w-px h-full bg-gray-300 dark:bg-gray-600" />
+      <div className="hidden sm:block w-px flex-1 bg-gray-300 dark:bg-gray-600" />
     </div>
-    <div className="pt-1 pb-8">
+
+    {/* Text Content */}
+    <div className="pt-1 pb-8 break-words">
       <p className="mb-2 text-lg font-bold">{title}</p>
       <div className="text-muted-foreground space-y-2">{children}</div>
     </div>
   </div>
 );
+
 
 const Installation: React.FC = () => {
   return (
@@ -43,6 +49,7 @@ const Installation: React.FC = () => {
           {/* Windows Installation */}
           <div>
             <h3 className="font-heading text-2xl mb-6 text-center md:text-left">
+              <Monitor className="w-5 h-5" />
               Windows
             </h3>
             <InstallationStep step={1} title="Download">
@@ -92,6 +99,7 @@ const Installation: React.FC = () => {
           {/* Mac Installation */}
           <div>
             <h3 className="font-heading text-2xl mb-6 text-center md:text-left">
+              <Apple className="w-5 h-5" />
               Mac
             </h3>
             <InstallationStep step={1} title="Download">
