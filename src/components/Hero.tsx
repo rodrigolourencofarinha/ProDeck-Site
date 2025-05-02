@@ -29,8 +29,8 @@ const Hero: React.FC = () => {
         </div>
       </div>
       {/* Consider adding the toolbar image here, perhaps with some subtle animation or framing */}
-      <div className="container mx-auto px-5 max-w-10xl mt-10">
-         <img 
+      <div className="w-full px-4 mt-10">
+      <img 
             src={prodeck_toolbar} // Assuming image will be placed in public/assets
             alt="ProDeck Toolbar Screenshot" 
             className="w-full h-auto rounded-lg border bg-muted p-2 shadow-lg dark:bg-zinc-800"
