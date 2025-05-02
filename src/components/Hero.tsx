@@ -1,5 +1,6 @@
 import React from 'react';
 import prodeck_toolbar from "@/assets/prodeck_toolbar.png";
+import logo from "@/assets/logo.svg";
 // import { Button } from "@/components/ui/button"; // Assuming shadcn/ui is installed via template
 
 const Hero: React.FC = () => {
@@ -7,6 +8,7 @@ const Hero: React.FC = () => {
     <section id="hero" className="pt-20 pb-10 bg-white">
       <div className="container mx-auto px-4 max-w-4xl flex flex-col items-center gap-6 text-center">
         {/* Optional: Add a subtle badge/pill here like "Free & Open Source" */}
+        <img src={logo} alt="ProDeck Logo" className="h-20 w-auto mx-auto mb-2" />
         <h1 className="font-heading text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
           ProDeck: Supercharge Your PowerPoint Workflow
         </h1>

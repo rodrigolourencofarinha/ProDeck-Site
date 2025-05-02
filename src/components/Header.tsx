@@ -8,10 +8,10 @@ const Header: React.FC = () => {
         {/* Logo + menu always visible, not just on md+ */}
         <div className="mr-4 flex items-center">
           <a className="mr-6 flex items-center space-x-2" href="/">
-            <img src={logo} alt="ProDeck Logo" className="h-10 w-auto mr-2" />
+            <img src={logo} alt="ProDeck Logo" className="h-8 w-auto mr-2" />
             <span className="hidden font-bold sm:inline-block">ProDeck</span>
           </a>
-          <nav className="flex items-center gap-6 text-sm">
+          <nav className="flex items-center gap-4 text-sm">
             <a className="transition-colors hover:text-foreground/80 text-foreground/60" href="#features">Features</a>
             <a className="transition-colors hover:text-foreground/80 text-foreground/60" href="#installation">Installation</a>
             <a className="transition-colors hover:text-foreground/80 text-foreground/60" href="#download">Download</a>
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
             target="_blank"
             rel="noreferrer"
             href="https://github.com/rodrigolourencofarinha/ProDeck"
-            className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8"
+            className="ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8"
           >
             GitHub
           </a>
