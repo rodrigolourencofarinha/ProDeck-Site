@@ -89,5 +89,10 @@ git push origin main
 
 
 ✅ No `gh-pages` branch or `homepage` field needed.
+
 ✅ Current Vite `base: "./"` works fine with the custom domain.
+
+### To Test
+
+Run `npm run dev` and open `http://localhost:5173/` to verify everything works locally. Stop cloud sync to avoid possible file locks.
 
