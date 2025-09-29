@@ -48,3 +48,46 @@ export default tseslint.config({
   },
 })
 ```
+
+## Instructions to Deploy
+
+This uses the `docs` folder method to avoid problems with large file names.
+
+1. **Build the website**
+2. **Remove the old `docs` folder** (except `CNAME`)
+3. **Move the new `dist` into `docs`**
+4. **Commit and push changes**
+5. **Verify** in GitHub → Settings → Pages: Source is `main` / `docs`, HTTPS enabled.
+
+### Code
+
+```PowerShell
+npm run build
+```
+
+> [!Note]- If possible, delete `docs` folder first (but keep `CNAME`)
+>
+> ```PowerShell
+> Get-ChildItem -Path .\docs\ -Recurse | Where-Object { $_.Name -ne "CNAME" } | Remove-Item -Force -Recurse
+> ```
+
+```PowerShell
+Copy-Item .\dist\* .\docs\ -Recurse -Force
+```
+
+```PowerShell
+git add docs
+```
+
+```PowerShell
+git commit -m "fix: correctly bundle images"
+```
+
+```PowerShell
+git push origin main
+```
+
+
+✅ No `gh-pages` branch or `homepage` field needed.
+✅ Current Vite `base: "./"` works fine with the custom domain.
+
