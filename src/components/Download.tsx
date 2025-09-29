@@ -2,7 +2,7 @@ import React from "react";
 
 const Download: React.FC = () => {
   return (
-    <section id="download" className="bg-white py-8 md:py-12 lg:py-24">
+    <section id="download" className="bg-background transition-colors py-8 md:py-12 lg:py-24">
       {/* Centered wrapper identical to other sections */}
       <div className="container mx-auto px-4 max-w-4xl flex flex-col items-center text-center space-y-6">
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">

@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "@/assets/logo.svg";
 import { Github } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Header: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const Header: React.FC = () => {
         {/* Left block: Logo + nav */}
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
           <a className="flex items-center space-x-2 shrink-0" href="/">
-            <img src={logo} alt="ProDeck Logo" className="h-10 w-auto" />
+            <img src={logo} alt="ProDeck Logo" className="h-10 w-auto dark:invert" />
             <span className="font-bold text-lg">ProDeck</span>
           </a>
           <nav className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
@@ -20,16 +21,17 @@ const Header: React.FC = () => {
           </nav>
         </div>
 
-        {/* Right block: GitHub */}
-        <div className="hidden md:flex shrink-0">
+        {/* Right block: Theme toggle + GitHub */}
+        <div className="flex items-center gap-2 shrink-0">
+          <ThemeToggle />
           <a
             target="_blank"
             rel="noreferrer"
             href="https://github.com/rodrigolourencofarinha/ProDeck"
-            className="ml-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8"
+            className="hidden md:inline-flex items-center justify-center whitespace-nowrap rounded-md border border-input bg-background text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground h-9 px-3"
           >
             <Github className="w-4 h-4" />
-            GitHub
+            <span className="ml-2">GitHub</span>
           </a>
         </div>
       </div>

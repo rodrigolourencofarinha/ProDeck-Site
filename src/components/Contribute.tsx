@@ -4,7 +4,7 @@ const Contribute: React.FC = () => {
   return (
     <section
       id="contribute"
-      className="bg-slate-50 dark:bg-transparent py-8 md:py-12 lg:py-24"
+      className="bg-muted transition-colors py-8 md:py-12 lg:py-24"
     >
       {/* Centered wrapper identical to other sections */}
       <div className="container mx-auto px-4 max-w-4xl grid gap-8 md:grid-cols-2">

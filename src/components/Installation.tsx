@@ -30,7 +30,7 @@ const Installation: React.FC = () => {
   return (
     <section
       id="installation"
-      className="bg-white py-8 md:py-12 lg:py-24"
+      className="bg-background transition-colors py-8 md:py-12 lg:py-24"
     >
       {/* Centered wrapper */}
       <div className="container mx-auto px-4 max-w-4xl space-y-12">

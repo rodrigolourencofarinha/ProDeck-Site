@@ -28,7 +28,7 @@ interface FeatureItemProps {
 
 const FeatureItem: React.FC<FeatureItemProps> = ({ title, description, icon }) => {
   return (
-    <div className="flex items-start gap-3 border-l-2 border-slate-100 py-2 pl-6 dark:border-slate-800">
+    <div className="flex items-start gap-3 border-l-2 border-border/60 py-2 pl-6">
       <div className="text-muted-foreground mt-1">{icon}</div>
       <div className="flex flex-col space-y-1">
         <h3 className="font-semibold text-lg">{title}</h3>
@@ -61,7 +61,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section id="features" className="bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24">
+    <section id="features" className="bg-muted py-8 transition-colors md:py-12 lg:py-24">
       <div className="container mx-auto px-4 max-w-4xl space-y-6">
         <div className="flex flex-col items-center space-y-4 text-center">
           <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">Features</h2>
